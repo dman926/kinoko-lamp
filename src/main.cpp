@@ -7,6 +7,7 @@ struct led
   int redPin;
   int greenPin;
   int bluePin;
+  int direction;
 }
 
 led leds[NUM_LED];
@@ -14,12 +15,14 @@ int lightPin;
 
 void setup()
 {
+  // TODO: setup pins to use actual pins
+
   // Init led pins
-  leds[0] = {0, 1, 2};
-  leds[1] = {3, 4, 5};
-  leds[2] = {6, 7, 8};
-  leds[3] = {9, 10, 11};
-  leds[4] = {12, 13, 14};
+  leds[0] = {0, 1, 2, 0};
+  leds[1] = {3, 4, 5, 0};
+  leds[2] = {6, 7, 8, 0};
+  leds[3] = {9, 10, 11, 0};
+  leds[4] = {12, 13, 14, 0};
   // Setup all led pins for output
   for (int i = 0; i < NUM_LED, i += 1)
   {
@@ -34,5 +37,7 @@ void setup()
 
 void loop()
 {
-  // Do stuff
+  // pick X number of leds
+  // increase/decrease brightness if on. turn on (direction = 1) if otherwise
+  // wait for Y milliseconds
 }
