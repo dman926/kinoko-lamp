@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name kinoko_lamp_library)(type Legacy)(uri ${KIPRJMOD}/kinoko_lamp_library.lib)(options "")(descr ""))
+)
